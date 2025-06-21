@@ -69,7 +69,7 @@ This file contains a machine learning pipeline for classifying radio-loud AGN (R
 ---
 
 
-# RLAGN HERG/LERG Classification Pipeline (JanssenML)
+# (JanssenML)
 
 This file contains a machine learning pipeline for classifying radio-loud AGN (RLAGN) into high- and low-excitation types (HERG/LERG), following Janssen et al. (2012).
 
