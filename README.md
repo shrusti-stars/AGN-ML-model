@@ -2,13 +2,13 @@
 This repository contains all code, data processing, and machine learning notebooks for the thesis project:
 **“Machine Learning Classification of Radio-Loud AGN Excitation Modes (HERG/LERG) in Large Galaxy Surveys.”**
 
-The project builds and applies machine learning pipelines to classify radio-loud AGN (RLAGN) based on host galaxy properties, using methods inspired by Janssen et al. (2012) and Best & Heckman (2012).
+The project builds and applies machine learning models to classify radio-loud AGN (RLAGN) based on host galaxy properties, using methods inspired by Janssen et al. (2012) and Best & Heckman (2012).
 
 
 ## Project Structure
 
-- **BHML/**: Pipeline using features and labels from Best & Heckman (2012)
-- **JanssenML/**: Pipeline following the feature logic of Janssen et al. (2012)
+- **BHML/**: model using features and labels from Best & Heckman (2012)
+- **JanssenML/**: model following the feature logic of Janssen et al. (2012)
 - **lotssML/**: Application of the trained ML model to the LoTSS DR2 AGN value-added catalogue
 - **notebooks/**: Jupyter notebooks for data cleaning, feature engineering, and model training/testing
 - **data/**: Scripts and instructions for sourcing external data (catalogs not included)
@@ -41,9 +41,9 @@ All pipelines use **Random Forest classifiers** and standard evaluation metrics 
 
 
 
-# RLAGN HERG/LERG Classification Pipeline (BHML)
+# RLAGN HERG/LERG Classification (BHML)
 
-This file contains a machine learning pipeline for classifying radio-loud AGN (RLAGN) into high- and low-excitation types (HERG/LERG), based on the approach and features from Best & Heckman (2012).
+This file contains a machine learning model for classifying radio-loud AGN (RLAGN) into high- and low-excitation types (HERG/LERG), based on the approach and features from Best & Heckman (2012).
 
 - **Data Sources**
   - SDSS DR7 main galaxy sample  
@@ -64,14 +64,14 @@ This file contains a machine learning pipeline for classifying radio-loud AGN (R
   - Serve as a baseline for evaluating feature extensions (e.g., emission-line diagnostics)
   - Enable RLAGN classification in SDSS-based galaxy/radio samples
 
-*This pipeline serves as the foundation for extended models (see JanssenML/), allowing direct comparison between classical and ML-based excitation mode separation.*
+*This model serves as the foundation for extended models (see JanssenML/), allowing direct comparison between classical and ML-based excitation mode separation.*
 
 ---
 
 
 # (JanssenML)
 
-This file contains a machine learning pipeline for classifying radio-loud AGN (RLAGN) into high- and low-excitation types (HERG/LERG), following Janssen et al. (2012).
+This file contains a machine learning model for classifying radio-loud AGN (RLAGN) into high- and low-excitation types (HERG/LERG), following Janssen et al. (2012).
 
 - **Data sources:**  
   - SDSS DR7 main galaxy sample  
@@ -91,7 +91,7 @@ This file contains a machine learning pipeline for classifying radio-loud AGN (R
 
 **See `janssen_huubML/` for step-by-step analysis, code, and figures.**
 
-*This pipeline extends the previous “BHML” model and incorporates feature logic from Janssen et al. (2012).*
+*This model extends the previous “BHML” model and incorporates feature logic from Janssen et al. (2012).*
 
 ---
 # RLAGN HERG/LERG ML Application to LOFAR LoTSS DR2 (lotssML)
@@ -117,7 +117,7 @@ This directory contains code for applying the SDSS-trained machine learning clas
   - Provide direct cross-survey comparison between optical (SDSS) and radio (LoTSS) AGN populations
 
 
-*This pipeline application and validation of RLAGN classifier in the next-generation LoTSS survey environment.*
+*This model application and validation of RLAGN classifier in the next-generation LoTSS survey environment.*
 
 ---
  
