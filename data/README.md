@@ -28,8 +28,8 @@ You will need to manually download the following data products:
 - Use features and logic described in the paper.
 
 ### 4. **LoTSS DR2 AGN Value-Added Catalogue**
-- Source: [LoTSS DR2](https://lofar-surveys.org/releases.html)
-- File: `agn-v1.1.fits` (or latest AGN value-added catalogue)
+- Source: [LoTSS DR2](https://lofar-surveys.org/releases.html)  
+- File: [`agn-v1.1.fits`](https://lofar-surveys.org/public/DR2/AGN_selection/agn-v1.1.fits) (or latest AGN value-added catalogue)
 - Reference: Hardcastle et al. 2023, A&A, 678, 151
 
 ---
